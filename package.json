@@ -1,15 +1,32 @@
 {
   "name": "discord-hono-example",
   "version": "0.0.0",
+  "author": "Luis (https://github.com/LuisFun)",
+  "license": "MIT",
+  "type": "module",
   "private": true,
   "scripts": {
-    "deploy": "wrangler deploy",
+    "fix": "prettier . --write",
+    "register": "tsc && node dist/register.js",
     "dev": "wrangler dev",
-    "start": "wrangler dev"
+    "deploy": "wrangler deploy",
+    "log": "wrangler tail"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "avoid"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240208.0",
-    "typescript": "^5.0.4",
-    "wrangler": "^3.0.0"
+    "discord-api-types": "^0.37.69",
+    "dotenv": "^16.4.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.28.1"
+  },
+  "dependencies": {
+    "discord-hono": "^0.3.0"
   }
 }
