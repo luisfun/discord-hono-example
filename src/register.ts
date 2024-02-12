@@ -1,7 +1,7 @@
 import dotenv from 'dotenv'
 import process from 'node:process'
 import { register } from 'discord-hono'
-import { commands } from '.'
+import { commands } from './index.js' // '.js' is necessary for 'npm run register'.
 
 dotenv.config({ path: '.dev.vars' })
 

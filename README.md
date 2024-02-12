@@ -1,6 +1,4 @@
-## 🤖 Sample Bot
-
-[Invite Discord Bot](https://discord.com/api/oauth2/authorize?client_id=1197625605785657565&permissions=2147485696&scope=bot+applications.commands)
+## 🤖 [Example Bot](https://discord.com/api/oauth2/authorize?client_id=1206568650148937738&permissions=2147485696&scope=bot+applications.commands)
 
 ## 🚀 Getting Started
 

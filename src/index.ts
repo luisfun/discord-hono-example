@@ -2,9 +2,9 @@ import type { Context } from 'discord-hono'
 import { DiscordHono, Command, CommandOption } from 'discord-hono'
 
 const imageHandler = async (c: Context) => {
-  const image = await fetch('https://luis.fun/images/hono.webp')
+  const image = await fetch('https://github.com/microsoft/fluentui-emoji/blob/main/assets/Fire/3D/fire_3d.png')
   const blob = new Blob([await image.arrayBuffer()])
-  await c.followup({ content: c.command.values[0] }, { blob, name: 'image.webp' })
+  await c.followup({ content: c.command.values[0] }, { blob, name: 'image.png' })
 }
 
 export const commands = [
