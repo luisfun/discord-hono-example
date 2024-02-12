@@ -45,4 +45,3 @@ Enter `https://discord-hono-example.YOUER_DOMAIN.workers.dev` in the [INTERACTIO
 ## 📑 Official Docs
 
 - [Discord Bot](https://discord.com/developers/docs/tutorials/hosting-on-cloudflare-workers)
-- [Cloudflare AI](https://developers.cloudflare.com/workers-ai)
