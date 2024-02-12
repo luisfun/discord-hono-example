@@ -1,28 +1,28 @@
 {
-	"compilerOptions": {
-		/* Visit https://aka.ms/tsconfig.json to read more about this file */
-		/* Language and Environment */
-		"target": "es2021",
-		"lib": ["es2021"],
-		"jsx": "react",
-		/* Modules */
-		"module": "es2022",
-		"moduleResolution": "node",
-		"types": ["@cloudflare/workers-types/2023-07-01"],
-		"resolveJsonModule": true,
-		/* JavaScript Support */
-		"allowJs": true,
-		"checkJs": false,
-		/* Emit */
-		"sourceMap": true,
-		"outDir": "./dist",
-		/* Interop Constraints */
-		"isolatedModules": true,
-		"allowSyntheticDefaultImports": true,
-		"forceConsistentCasingInFileNames": true,
-		/* Type Checking */
-		"strict": true,
-		/* Completeness */
-		"skipLibCheck": true
-	}
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    /* Language and Environment */
+    "target": "es2021",
+    "lib": ["es2021"],
+    "jsx": "react",
+    /* Modules */
+    "module": "es2022",
+    "moduleResolution": "node",
+    "types": ["@cloudflare/workers-types/2023-07-01"],
+    "resolveJsonModule": true,
+    /* JavaScript Support */
+    "allowJs": true,
+    "checkJs": false,
+    /* Emit */
+    "sourceMap": true,
+    "outDir": "./dist",
+    /* Interop Constraints */
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    /* Type Checking */
+    "strict": true,
+    /* Completeness */
+    "skipLibCheck": true
+  }
 }
