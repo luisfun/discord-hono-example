@@ -10,7 +10,7 @@ const imageHandler = async (c: Context) => {
 export const commands = [
   new Command('ping', 'response pong').resText('Pong!!'),
   new Command('image', 'response image file with text')
-    .option(new CommandOption('content', 'response text').required())
+    .options(new CommandOption('content', 'response text').required())
     .resDefer(imageHandler),
 ]
 
