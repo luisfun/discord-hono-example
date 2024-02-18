@@ -1,9 +1,5 @@
-import { DiscordHono, Command, Option, CommandHandlers } from 'discord-hono'
-
-export const commands = [
-  new Command('ping', 'response pong'),
-  new Command('image', 'response image file with text').options(new Option('content', 'response text').required()),
-]
+import { DiscordHono, CommandHandlers } from 'discord-hono'
+import { commands } from './commands'
 
 const handlers = new CommandHandlers()
   .on('ping', c => c.resText('Pong!!'))
