@@ -1,9 +1,13 @@
 import dotenv from 'dotenv'
 import process from 'node:process'
-import { register } from 'discord-hono'
-import { commands } from './commands.js' // '.js' is necessary for 'npm run register'
+import { Command, Option, register } from 'discord-hono'
 
 dotenv.config({ path: '.dev.vars' })
+
+const commands = [
+  new Command('ping', 'response pong'),
+  new Command('image', 'response image file').options(new Option('text', 'with text').required()),
+]
 
 await register(
   commands,

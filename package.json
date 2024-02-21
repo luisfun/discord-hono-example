@@ -21,12 +21,12 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240208.0",
     "discord-api-types": "^0.37.70",
-    "dotenv": "^16.4.4",
+    "dotenv": "^16.4.5",
     "prettier": "^3.2.5",
     "typescript": "^5.3.3",
-    "wrangler": "^3.28.3"
+    "wrangler": "^3.28.4"
   },
   "dependencies": {
-    "discord-hono": "^0.4.3"
+    "discord-hono": "^0.4.6"
   }
 }
