@@ -5,8 +5,8 @@ import { Command, Option, register } from 'discord-hono'
 dotenv.config({ path: '.dev.vars' })
 
 const commands = [
-  new Command('ping', 'response pong'),
-  new Command('image', 'response image file').options(new Option('text', 'with text').required()),
+  new Command('hello', 'response world'),
+  new Command('help', 'response help').options(new Option('text', 'with text')),
 ]
 
 await register(
