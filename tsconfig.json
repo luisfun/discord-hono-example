@@ -7,7 +7,7 @@
     "jsx": "react",
     /* Modules */
     "module": "es2022",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
     "types": ["@cloudflare/workers-types/2023-07-01"],
     "resolveJsonModule": true,
     /* JavaScript Support */
@@ -23,5 +23,7 @@
     "strict": true,
     /* Completeness */
     "skipLibCheck": true
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["test"]
 }

@@ -19,14 +19,14 @@
     "arrowParens": "avoid"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240320.1",
-    "discord-api-types": "^0.37.76",
+    "@cloudflare/workers-types": "^4.20240405.0",
+    "discord-api-types": "^0.37.79",
     "dotenv": "^16.4.5",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3",
-    "wrangler": "^3.37.0"
+    "typescript": "^5.4.5",
+    "wrangler": "^3.49.0"
   },
   "dependencies": {
-    "discord-hono": "^0.4.17"
+    "discord-hono": "^0.5.2"
   }
 }
