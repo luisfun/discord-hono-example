@@ -8,7 +8,7 @@
 ### 1. Clone and Install
 
 ```shell
-git clone https://github.com/LuisFun/discord-hono-example discord-hono-example
+git clone https://github.com/luisfun/discord-hono-example discord-hono-example
 cd discord-hono-example
 npm i
 ```
