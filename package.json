@@ -6,27 +6,22 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "fix": "prettier . --write",
+    "fix": "biome check --apply . && tsc --noEmit",
+    "fix:unsafe": "biome check --apply-unsafe . && tsc --noEmit",
     "register": "tsc && node dist/register.js",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "log": "wrangler tail"
   },
-  "prettier": {
-    "printWidth": 120,
-    "semi": false,
-    "singleQuote": true,
-    "arrowParens": "avoid"
-  },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240405.0",
-    "discord-api-types": "^0.37.79",
+    "@biomejs/biome": "1.7.1",
+    "@cloudflare/workers-types": "^4.20240423.0",
+    "discord-api-types": "^0.37.83",
     "dotenv": "^16.4.5",
-    "prettier": "^3.2.5",
     "typescript": "^5.4.5",
-    "wrangler": "^3.49.0"
+    "wrangler": "^3.52.0"
   },
   "dependencies": {
-    "discord-hono": "^0.5.2"
+    "discord-hono": "^0.6.1"
   }
 }

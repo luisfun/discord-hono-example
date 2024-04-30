@@ -1,6 +1,6 @@
-import { config } from 'dotenv'
 import { env } from 'node:process'
 import { Command, Option, register } from 'discord-hono'
+import { config } from 'dotenv'
 config({ path: '.dev.vars' })
 
 const commands = [
