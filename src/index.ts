@@ -11,6 +11,6 @@ const app = new DiscordHono()
       ),
     }),
   )
-  .component('delete-self', c => c.resRepost())
+  .component('delete-self', c => c.resDeferUpdate(c.followupDelete))
 
 export default app

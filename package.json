@@ -14,14 +14,14 @@
     "log": "wrangler tail"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.7.1",
-    "@cloudflare/workers-types": "^4.20240423.0",
+    "@biomejs/biome": "1.7.3",
+    "@cloudflare/workers-types": "^4.20240502.0",
     "discord-api-types": "^0.37.83",
     "dotenv": "^16.4.5",
     "typescript": "^5.4.5",
-    "wrangler": "^3.52.0"
+    "wrangler": "^3.53.1"
   },
   "dependencies": {
-    "discord-hono": "^0.6.1"
+    "discord-hono": "^0.7.0"
   }
 }
