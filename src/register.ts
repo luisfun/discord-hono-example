@@ -1,7 +1,4 @@
-import { env } from 'node:process'
 import { Command, Option, register } from 'discord-hono'
-import { config } from 'dotenv'
-config({ path: '.dev.vars' })
 
 const commands = [
   new Command('hello', 'response world'),
@@ -10,7 +7,7 @@ const commands = [
 
 register(
   commands,
-  env.DISCORD_APPLICATION_ID,
-  env.DISCORD_TOKEN,
+  process.env.DISCORD_APPLICATION_ID,
+  process.env.DISCORD_TOKEN,
   //env.DISCORD_TEST_GUILD_ID,
 )

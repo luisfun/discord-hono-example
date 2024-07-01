@@ -6,22 +6,20 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "fix": "biome check --apply . && tsc --noEmit",
-    "fix:unsafe": "biome check --apply-unsafe . && tsc --noEmit",
-    "register": "tsc && node dist/register.js",
-    "dev": "wrangler dev",
+    "fix": "biome check --write . && tsc --noEmit",
+    "fix:unsafe": "biome check --write --unsafe . && tsc --noEmit",
+    "register": "tsc && node --env-file=.env dist/register.js",
     "deploy": "wrangler deploy",
     "log": "wrangler tail"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.7.3",
-    "@cloudflare/workers-types": "^4.20240502.0",
-    "discord-api-types": "^0.37.83",
-    "dotenv": "^16.4.5",
-    "typescript": "^5.4.5",
-    "wrangler": "^3.53.1"
+    "@biomejs/biome": "1.8.3",
+    "@cloudflare/workers-types": "^4.20240620.0",
+    "discord-api-types": "^0.37.91",
+    "typescript": "^5.5.3",
+    "wrangler": "^3.62.0"
   },
   "dependencies": {
-    "discord-hono": "^0.7.0"
+    "discord-hono": "^0.7.2"
   }
 }

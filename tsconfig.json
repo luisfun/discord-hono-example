@@ -8,7 +8,7 @@
     /* Modules */
     "module": "es2022",
     "moduleResolution": "Bundler",
-    "types": ["@cloudflare/workers-types/2023-07-01"],
+    "types": ["@cloudflare/workers-types/2023-07-01", "node"],
     "resolveJsonModule": true,
     /* JavaScript Support */
     "allowJs": true,

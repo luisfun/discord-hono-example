@@ -3,4 +3,4 @@ main = "src/index.ts"
 compatibility_date = "2024-02-08"
 
 [limits]
-cpu_ms = 300
+cpu_ms = 50

@@ -4,7 +4,7 @@ const app = new DiscordHono()
   .command('hello', c => c.res('world!'))
   .command('help', c =>
     c.res({
-      content: `text: ${c.values.text}`,
+      content: `text: ${c.var.text}`,
       components: new Components().row(
         new LinkButton('https://discord-hono.luis.fun', 'Docs'),
         new Button('delete-self', 'Delete', 'Secondary').emoji({ name: '🗑️' }),
