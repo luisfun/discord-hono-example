@@ -1,29 +1,24 @@
-## 🤖 [Example Bot](https://discord.com/api/oauth2/authorize?client_id=1206568650148937738&permissions=2147485696&scope=bot+applications.commands)
+# 🔥 Discord Hono Example
 
-## 🚀 Getting Started
+[👉 Example Bot](https://discord.com/api/oauth2/authorize?client_id=1206568650148937738&permissions=2147485696&scope=bot+applications.commands)
 
-[<img alt="Git" src="https://img.shields.io/badge/Git-windows-%23F05032?logo=Git" />](https://gitforwindows.org)
-[<img alt="Node.js" src="https://img.shields.io/badge/Node.js-20.x-%23339933?logo=Node.js" />](https://nodejs.org)
+This example runs on Cloudflare Workers.
 
-### 1. Clone and Install
+## Fork, Clone, Install
 
-```shell
-git clone https://github.com/luisfun/discord-hono-example discord-hono-example
+[Fork and Clone](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+
+```sh
 cd discord-hono-example
 npm i
 ```
 
-### 2. Set Environment Variables
+## Setup Discord Bot
 
-Create a New Application from [Dashboard](https://discord.com/developers/applications).
+Create a New Application from [Dashboard](https://discord.com/developers/applications).  
+Copy your `APPLICATION ID`, `PUBLIC KEY` and `TOKEN`, and put them `.env` file.
 
-#### 2.1 Set Local
-
-Rename the file `example.dev.var` and create a `.dev.var` file.
-
-Enter information in `.dev.var`, referring to the [Official Docs](https://discord.com/developers/docs/tutorials/hosting-on-cloudflare-workers).
-
-#### 2.2 Set Workers
+Storing secrets.
 
 ```shell
 npx wrangler secret put DISCORD_APPLICATION_ID
@@ -31,17 +26,15 @@ npx wrangler secret put DISCORD_PUBLIC_KEY
 npx wrangler secret put DISCORD_TOKEN
 ```
 
-### 3. Register Commands and Deploy
+Register commands and Deploy.
 
 ```shell
 npm run register
 npm run deploy
 ```
 
-### 4. Set Endpoint URL
+Enter `https://YOUER_PROJECT.YOUER_DOMAIN.workers.dev` in the [INTERACTIONS ENDPOINT URL](https://discord.com/developers/applications).
 
-Enter `https://discord-hono-example.YOUER_DOMAIN.workers.dev` in the [INTERACTIONS ENDPOINT URL](https://discord.com/developers/applications).
-
-## 📑 Official Docs
-
-- [Discord Bot](https://discord.com/developers/docs/tutorials/hosting-on-cloudflare-workers)
+Create an invite URL from [Dashboard](https://discord.com/developers/applications).  
+`YOUR_APP` > `OAuth2` tab > `OAuth2 URL Generator` > Check SCOPES: `bot` > URL `Copy`  
+Paste the URL into the browser.
