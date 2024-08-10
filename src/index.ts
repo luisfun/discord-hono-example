@@ -1,4 +1,4 @@
-import { Button, Components, DiscordHono, LinkButton } from 'discord-hono'
+import { Button, Components, DiscordHono } from 'discord-hono'
 
 const app = new DiscordHono()
   .command('hello', c => c.res('world!'))
@@ -6,7 +6,7 @@ const app = new DiscordHono()
     c.res({
       content: `text: ${c.var.text}`,
       components: new Components().row(
-        new LinkButton('https://discord-hono.luis.fun', 'Docs'),
+        new Button('https://discord-hono.luis.fun', 'Docs', "Link"),
         new Button('delete-self', 'Delete', 'Secondary').emoji({ name: '🗑️' }),
       ),
     }),
