@@ -9,17 +9,17 @@
     "fix": "biome check --write . && tsc --noEmit",
     "fix:unsafe": "biome check --write --unsafe . && tsc --noEmit",
     "register": "tsc && node --env-file=.env dist/register.js",
-    "deploy": "wrangler deploy",
+    "deploy": "wrangler deploy --minify",
     "log": "wrangler tail"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@cloudflare/workers-types": "^4.20241230.0",
+    "@cloudflare/workers-types": "^4.20250109.0",
     "discord-api-types": "^0.37.115",
-    "typescript": "^5.7.2",
-    "wrangler": "^3.100.0"
+    "typescript": "^5.7.3",
+    "wrangler": "^3.101.0"
   },
   "dependencies": {
-    "discord-hono": "^0.9.3"
+    "discord-hono": "^0.10.0"
   }
 }
