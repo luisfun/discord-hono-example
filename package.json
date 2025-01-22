@@ -8,6 +8,7 @@
   "scripts": {
     "fix": "biome check --write . && tsc --noEmit",
     "fix:unsafe": "biome check --write --unsafe . && tsc --noEmit",
+    "dev": "wrangler dev",
     "register": "tsc && node --env-file=.env dist/register.js",
     "deploy": "wrangler deploy --minify",
     "log": "wrangler tail"
